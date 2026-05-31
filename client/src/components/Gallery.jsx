@@ -3,28 +3,78 @@ import { ImageIcon } from 'lucide-react';
 
 const GALLERY_ITEMS = [
   {
-    src: "https://raw.githubusercontent.com/arpit-deshmukh/Portfolio-Arpit-Deshmukh-v2/main/client/public/AD/20241113_141044.jpg",
+    src: "/AD/moment-captured.jpg",
     caption: "A moment captured",
     span: "col-span-1 row-span-2",
   },
   {
-    src: "https://raw.githubusercontent.com/arpit-deshmukh/Portfolio-Arpit-Deshmukh-v2/main/client/public/AD/IMG_20250909_102602823_HDR.jpg",
+    src: "/AD/life-beyond-code.jpg",
     caption: "Life beyond code",
     span: "col-span-1",
   },
   {
-    src: "https://raw.githubusercontent.com/arpit-deshmukh/Portfolio-Arpit-Deshmukh-v2/main/client/public/AD/classic.png",
+    src: "/AD/classic.png",
     caption: "Classic",
     span: "col-span-1",
   },
   {
-    src: "https://raw.githubusercontent.com/arpit-deshmukh/Portfolio-Arpit-Deshmukh-v2/main/client/public/AD/itesa_1.jpg",
+    src: "/AD/itesa-events.jpg",
     caption: "ITESA Events",
     span: "col-span-2",
   },
   {
-    src: "https://raw.githubusercontent.com/arpit-deshmukh/Portfolio-Arpit-Deshmukh-v2/main/client/public/AD/debate_grp_cummins.jpg",
+    src: "/AD/debate-cummins.jpg",
     caption: "Debate — Cummins College",
+    span: "col-span-1",
+  },
+  {
+    src: "/AD/image1.jpg",
+    caption: "Memories",
+    span: "col-span-1",
+  },
+  {
+    src: "/AD/image2.jpg",
+    caption: "Moments",
+    span: "col-span-1",
+  },
+  {
+    src: "/AD/image3.jpg",
+    caption: "Snapshots",
+    span: "col-span-1",
+  },
+  {
+    src: "/AD/image4.jpg",
+    caption: "Adventures",
+    span: "col-span-1",
+  },
+  {
+    src: "/AD/image5.jpg",
+    caption: "Throwback",
+    span: "col-span-2",
+  },
+  {
+    src: "/AD/image6.jpg",
+    caption: "Highlights",
+    span: "col-span-1",
+  },
+  {
+    src: "/AD/image7.jpeg",
+    caption: "Connections",
+    span: "col-span-1",
+  },
+  {
+    src: "/AD/image8.jpeg",
+    caption: "Frames",
+    span: "col-span-1",
+  },
+  {
+    src: "/AD/image9.jpeg",
+    caption: "Experiences",
+    span: "col-span-1",
+  },
+  {
+    src: "/AD/image10.jpg",
+    caption: "Journeys",
     span: "col-span-1",
   },
 ];
@@ -47,7 +97,7 @@ export function Gallery() {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 grid-rows-3 gap-3 h-[580px]">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 auto-rows-[250px]">
           {GALLERY_ITEMS.map((item, i) => (
             <motion.div
               key={i}
@@ -55,12 +105,12 @@ export function Gallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.07 }}
-              className={`relative overflow-hidden rounded-2xl ${item.span} group cursor-pointer`}
+              className={`relative overflow-hidden rounded-2xl ${item.span} group cursor-pointer bg-zinc-900/40 border border-zinc-800`}
             >
               <img
                 src={item.src}
                 alt={item.caption}
-                className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 group-hover:opacity-90"
+                className="w-full h-full object-contain transition-all duration-500 group-hover:scale-105 group-hover:opacity-90"
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.parentElement.style.background = '#18181b';
