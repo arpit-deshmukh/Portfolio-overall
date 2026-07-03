@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 import { ImageIcon } from 'lucide-react';
 
 const GALLERY_ITEMS = [
-  {
-    src: "/AD/moment-captured.jpg",
-    caption: "A moment captured",
-    span: "col-span-1 row-span-2",
-  },
+  // {
+  //   src: "/AD/moment-captured.jpg",
+  //   caption: "A moment captured",
+  //   span: "col-span-1 row-span-2",
+  // },
   {
     src: "/AD/life-beyond-code.jpg",
     caption: "Life beyond code",
