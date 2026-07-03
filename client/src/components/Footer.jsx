@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="mt-20 py-8 text-gray-400 border-t border-white/10">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm">
-          © {year} <span className="text-white font-semibold">Arpit Deshmukh</span>. Built with React &amp; Tailwind CSS.
+          © {year} <span className="text-white font-semibold">Arpit Deshmukh</span>.
         </p>
 
         <div className="flex items-center gap-5">

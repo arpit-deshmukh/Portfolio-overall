@@ -53,6 +53,24 @@ export const PROJECTS_DATA = [
     live: "https://multi-agent-dev-team-s1.vercel.app/app",
     image: "https://raw.githubusercontent.com/arpit-deshmukh/Portfolio-Arpit-Deshmukh-v2/main/client/public/project-assets/multi-agent-s1.png",
   },
+  {
+    id: 5,
+    title: "Movie Intelligence Platform",
+    description: "A smart movie discovery platform that provides recommendations, trending films, ratings, and detailed insights using external APIs.",
+    tags: ["React", "Node.js", "API Integration", "TMDB API"],
+    github: "https://github.com/arpit-deshmukh/Movie-Recommendation-Project?tab=readme-ov-file",
+    live: "https://movie-recommendation-project-v1.vercel.app/",
+    image: "https://raw.githubusercontent.com/arpit-deshmukh/Portfolio-Arpit-Deshmukh-v2/main/client/public/project-assets/movie.png",
+  },
+  {
+    id: 6,
+    title: "Visuals – WebRTC Video Chat",
+    description: "A real-time video chat app using WebRTC and Socket.io.",
+    tags: ["React", "WebRTC", "CSS"],
+    github: "https://github.com/arpit-deshmukh/Visuals_v1",
+    live: "#",
+    image: "https://raw.githubusercontent.com/arpit-deshmukh/Portfolio-Arpit-Deshmukh-v2/main/client/public/project-assets/visuals.png",
+  }
 ];
 
 export const ACTIVITIES_DATA = [
