@@ -12,7 +12,7 @@ export const HERO_DATA = {
 };
 
 export const ABOUT_DATA = {
-  bio: "I'm Arpit Deshmukh — a B.E. Information Technology student at DYPCOE, Pune. I love building practical, real-world projects that sit at the intersection of clean engineering and great design. I'm constantly exploring new technologies and applying them to solve meaningful problems.",
+  bio: "I believe technology holds the key to solving some of the world's most complex challenges and rising problems. By leveraging our skills in coding, problem-solving, and innovation, we should aim to create solutions that not only drive growth but also make a positive impact on society.",
   traits: ["Problem Solver", "Quick Learner", "Team Player", "Creative Thinker"],
 };
 
