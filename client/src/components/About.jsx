@@ -2,7 +2,7 @@ import { ABOUT_DATA } from '../data';
 import { motion } from 'framer-motion';
 
 const SKILL_GROUPS = [
-  { label: 'Languages', items: ['Python', 'JavaScript', 'C++', 'Java'] },
+  { label: 'Languages', items: ['JavaScript', 'C++', 'Java'] },
   { label: 'Frontend', items: ['React', 'Tailwind CSS', 'HTML5', 'CSS3'] },
   { label: 'Backend', items: ['Node.js', 'Express.js', 'REST APIs'] },
   { label: 'Tools', items: ['Git', 'GitHub', 'VS Code', 'Figma', 'Linux'] },

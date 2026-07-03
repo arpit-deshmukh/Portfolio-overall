@@ -18,14 +18,14 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="relative w-full flex justify-center md:justify-start order-first md:order-last"
+          className="relative flex justify-center md:justify-end pr-0 md:pr-10"
         >
-          <div className="gradient-border">
-            <div className="bg-white/5 rounded-2xl overflow-hidden border border-white/10">
+          <div className="gradient-border rounded-2xl p-[1px] bg-gradient-to-br from-blue-500/40 to-transparent">
+            <div className="bg-[#0a0a0a] rounded-2xl overflow-hidden">
               <img
                 src="https://raw.githubusercontent.com/arpit-deshmukh/Portfolio-Arpit-Deshmukh-v2/main/client/public/core/logo/logo_3.png"
                 alt="Arpit Deshmukh"
-                className="w-full h-[340px] object-cover opacity-90"
+                className="w-64 md:w-72 h-[340px] md:h-[400px] object-cover opacity-90"
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src = 'https://ui-avatars.com/api/?name=Arpit+Deshmukh&size=400&background=1e3a5f&color=60a5fa&bold=true&font-size=0.33';
@@ -39,9 +39,8 @@ export function Hero() {
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="order-last md:order-first"
+          className="flex flex-col justify-center"
         >
-          <p className="section-label">Welcome to my portfolio</p>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-4">
             Hi, I'm <span className="text-blue-400">{HERO_DATA.firstName}</span>
           </h1>
