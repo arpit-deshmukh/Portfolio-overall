@@ -95,24 +95,24 @@ function PortfolioCard({ item }) {
       variants={fadeUp}
       whileHover={{ y: -8, transition: { duration: 0.25, ease: "easeOut" } }}
       whileTap={{ scale: 0.97 }}
-      className={`card block p-6 group relative overflow-hidden border ${item.border}`}
+      className={`card block p-5 group relative overflow-hidden border ${item.border}`}
     >
       <div className={`absolute inset-0 bg-gradient-to-br ${item.accent} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
 
       <div className="relative z-10">
-        <div className={`w-12 h-12 rounded-xl border flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110 ${item.iconBg}`}>
-          <Icon size={20} />
+        <div className={`w-10 h-10 rounded-xl border flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110 ${item.iconBg}`}>
+          <Icon size={18} />
         </div>
 
-        <h2 className="text-xl font-bold mb-2 group-hover:text-white transition-colors">{item.title}</h2>
+        <h2 className="text-lg font-bold mb-2 group-hover:text-white transition-colors">{item.title}</h2>
 
-        <p className="text-gray-400 text-sm leading-relaxed mb-5 group-hover:text-gray-300 transition-colors">
+        <p className="text-gray-400 text-xs leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
           {item.description}
         </p>
 
-        <div className="flex items-center gap-1.5 text-blue-400 text-sm font-medium group-hover:gap-3 transition-all duration-300">
+        <div className="flex items-center gap-1.5 text-blue-400 text-xs font-medium group-hover:gap-3 transition-all duration-300">
           <span>Explore</span>
-          <ArrowRight size={16} />
+          <ArrowRight size={14} />
         </div>
       </div>
     </motion.a>

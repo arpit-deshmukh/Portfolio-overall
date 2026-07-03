@@ -9,8 +9,6 @@ export function About() {
         viewport={{ once: true }} 
         transition={{ duration: 0.6 }}
       >
-        <p className="uppercase tracking-widest text-xs font-bold text-blue-500 mb-4">WHO I AM</p>
-        
         <div className="card p-8 md:p-10 mb-14 border border-zinc-800/50 bg-[#111113]">
           <p className="text-gray-300 leading-relaxed text-base font-medium">
             I believe technology holds the key to solving some of the world's most complex challenges and rising problems. By leveraging our skills in coding, problem-solving, and innovation, we should aim to create solutions that not only drive growth but also make a <span className="text-blue-400">positive impact on society</span>.
