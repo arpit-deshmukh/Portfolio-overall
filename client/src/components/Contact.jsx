@@ -1,7 +1,36 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Send, Mail, MapPin } from 'lucide-react';
 
 export function Contact() {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('Sending...');
+    try {
+      const res = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus('Message Sent!');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setStatus('Error: ' + data.message);
+      }
+    } catch (error) {
+      setStatus('Error sending message');
+    }
+  };
+
   return (
     <section id="contact" className="pt-28 pb-20 px-6 max-w-6xl mx-auto text-white scroll-mt-20">
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
@@ -47,22 +76,23 @@ export function Contact() {
             </div>
           </div>
 
-          <form className="card p-8 flex flex-col gap-5" onSubmit={(e) => e.preventDefault()}>
+          <form className="card p-8 flex flex-col gap-5" onSubmit={handleSubmit}>
             <div>
               <label className="text-xs text-gray-500 uppercase tracking-widest font-mono mb-2 block">Name</label>
-              <input type="text" className="input-base" placeholder="Your full name" />
+              <input type="text" name="name" value={formData.name} onChange={handleChange} required className="input-base" placeholder="Your full name" />
             </div>
             <div>
               <label className="text-xs text-gray-500 uppercase tracking-widest font-mono mb-2 block">Email</label>
-              <input type="email" className="input-base" placeholder="your@email.com" />
+              <input type="email" name="email" value={formData.email} onChange={handleChange} required className="input-base" placeholder="your@email.com" />
             </div>
             <div>
               <label className="text-xs text-gray-500 uppercase tracking-widest font-mono mb-2 block">Message</label>
-              <textarea rows={4} className="input-base resize-none" placeholder="What's on your mind?" />
+              <textarea rows={4} name="message" value={formData.message} onChange={handleChange} required className="input-base resize-none" placeholder="What's on your mind?" />
             </div>
             <button type="submit" className="btn-primary justify-center mt-2">
-              Send Message <Send size={16} />
+              {status === 'Sending...' ? 'Sending...' : <>Send Message <Send size={16} /></>}
             </button>
+            {status && status !== 'Sending...' && <p className="text-sm mt-2 text-center text-gray-400">{status}</p>}
           </form>
         </div>
       </motion.div>
