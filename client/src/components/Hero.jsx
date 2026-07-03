@@ -15,6 +15,30 @@ export function Hero() {
 
       <div className="relative grid md:grid-cols-2 gap-16 items-center">
         <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-col justify-center"
+        >
+          <p className="section-label">Welcome to my portfolio</p>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-4">
+            Hi, I'm <span className="text-blue-400">{HERO_DATA.firstName}</span>
+          </h1>
+          <p className="text-lg text-gray-300 font-medium mb-3">{HERO_DATA.title}</p>
+          <p className="text-gray-500 text-base leading-relaxed mb-10 max-w-md">
+            {HERO_DATA.description}
+          </p>
+          <div className="flex flex-wrap gap-4">
+            <button onClick={() => scrollTo('#projects')} className="btn-primary">
+              View Projects <ArrowRight size={18} />
+            </button>
+            <button onClick={() => scrollTo('#about')} className="btn-ghost">
+              About Me
+            </button>
+          </div>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
@@ -32,29 +56,6 @@ export function Hero() {
                 }}
               />
             </div>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.7 }}
-          className="flex flex-col justify-center"
-        >
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-4">
-            Hi, I'm <span className="text-blue-400">{HERO_DATA.firstName}</span>
-          </h1>
-          <p className="text-lg text-gray-300 font-medium mb-3">{HERO_DATA.title}</p>
-          <p className="text-gray-500 text-base leading-relaxed mb-10 max-w-md">
-            {HERO_DATA.description}
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <button onClick={() => scrollTo('#projects')} className="btn-primary">
-              View Projects <ArrowRight size={18} />
-            </button>
-            <button onClick={() => scrollTo('#about')} className="btn-ghost">
-              About Me
-            </button>
           </div>
         </motion.div>
       </div>
