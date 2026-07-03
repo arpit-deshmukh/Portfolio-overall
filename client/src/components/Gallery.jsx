@@ -22,11 +22,11 @@ const GALLERY_ITEMS = [
     caption: "ITESA Events",
     span: "col-span-2",
   },
-  {
-    src: "/AD/debate-cummins.jpg",
-    caption: "Debate — Cummins College",
-    span: "col-span-1",
-  },
+  // {
+  //   src: "/AD/debate-cummins.jpg",
+  //   caption: "Debate — Cummins College",
+  //   span: "col-span-1",
+  // },
   {
     src: "/AD/image1.jpg",
     caption: "Memories",
@@ -47,11 +47,11 @@ const GALLERY_ITEMS = [
     caption: "Adventures",
     span: "col-span-1",
   },
-  {
-    src: "/AD/image5.jpg",
-    caption: "Throwback",
-    span: "col-span-2",
-  },
+  // {
+  //   src: "/AD/image5.jpg",
+  //   caption: "Throwback",
+  //   span: "col-span-2",
+  // },
   {
     src: "/AD/image6.jpg",
     caption: "Highlights",

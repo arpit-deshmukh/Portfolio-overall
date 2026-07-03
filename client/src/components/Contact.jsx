@@ -69,7 +69,7 @@ export function Contact() {
                 className="flex-1 text-center py-2 border border-zinc-800 rounded-xl text-gray-400 hover:text-white hover:border-blue-500/40 transition-all text-sm font-medium">
                 GitHub
               </a>
-              <a href="https://linkedin.com/in/arpit-deshmukh" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/arpit-deshmukh-08877227a/" target="_blank" rel="noopener noreferrer"
                 className="flex-1 text-center py-2 border border-zinc-800 rounded-xl text-gray-400 hover:text-white hover:border-blue-500/40 transition-all text-sm font-medium">
                 LinkedIn
               </a>

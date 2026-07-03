@@ -14,7 +14,7 @@ export function Footer() {
             className="text-gray-500 hover:text-white transition-colors">
             <Code size={20} />
           </a>
-          <a href="https://linkedin.com/in/arpit-deshmukh" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.linkedin.com/in/arpit-deshmukh-08877227a/" target="_blank" rel="noopener noreferrer"
             className="text-gray-500 hover:text-blue-400 transition-colors">
             <Briefcase size={20} />
           </a>

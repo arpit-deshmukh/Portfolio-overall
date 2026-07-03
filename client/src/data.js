@@ -6,7 +6,7 @@ export const HERO_DATA = {
   photo: "https://raw.githubusercontent.com/arpit-deshmukh/Portfolio-Arpit-Deshmukh-v2/main/client/public/core/logo/logo_3.png",
   socials: {
     github: "https://github.com/arpit-deshmukh",
-    linkedin: "https://linkedin.com/in/arpit-deshmukh",
+    linkedin: "https://www.linkedin.com/in/arpit-deshmukh-08877227a/",
     email: "mailto:arpit.deshmukh@email.com",
   }
 };
