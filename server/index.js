@@ -7,7 +7,11 @@ const contactRoute = require('./routes/contact');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: ['https://arpit-s1.vercel.app', 'http://localhost:5173', 'http://localhost:5174'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/portfolio')
