@@ -2,6 +2,10 @@
 *.log
 npm-debug.log*
 
+
+#imp 
+data1
+
 # Dependency directories
 node_modules/
 client/node_modules/

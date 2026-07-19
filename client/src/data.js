@@ -19,12 +19,12 @@ export const ABOUT_DATA = {
 export const PROJECTS_DATA = [
   {
     id: 1,
-    title: "Niwaas – Rental Property Platform",
-    description: "A rental property management platform built with the MERN stack, featuring JWT auth, property listings, and a clean UI.",
-    tags: ["MERN", "JWT", "TailwindCSS"],
-    github: "https://github.com/arpit-deshmukh/NIwaas-v3-Rental-Propery-management-Platform",
-    live: "https://niwaas-v3.vercel.app/",
-    image: "https://raw.githubusercontent.com/arpit-deshmukh/Portfolio-Arpit-Deshmukh-v2/main/client/public/project-assets/Niwaas-s1.png",
+    title: "Smart CRM – Customer Relationship Management",
+    description: "A full-stack Customer Relationship Management (CRM) platform designed to help businesses manage leads, contacts, deals, companies, and communications efficiently with built-in analytics dashboard.",
+    tags: ["React", "Node.js", "Express", "MongoDB", "TailwindCSS", "Recharts"],
+    github: "https://github.com/arpit-deshmukh/smart-crm-TEW",
+    live: "https://smart-crm-tew.vercel.app/",
+    image: "/project-images/smart-crm.png",
   },
   {
     id: 2,
