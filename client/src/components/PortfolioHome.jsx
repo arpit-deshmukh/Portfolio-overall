@@ -50,7 +50,7 @@ export function PortfolioHome() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="pt-28 pb-20 px-6 max-w-6xl mx-auto text-white">
+    <section ref={ref} className="pt-28 pb-20 px-6 max-w-6xl mx-auto text-gray-900 dark:text-white">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -58,7 +58,7 @@ export function PortfolioHome() {
         className="mb-14"
       >
         <p className="section-label">Explore my work</p>
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 ">
           Portfolio{" "}
           <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
             Overview
@@ -104,13 +104,13 @@ function PortfolioCard({ item }) {
           <Icon size={18} />
         </div>
 
-        <h2 className="text-lg font-bold mb-2 group-hover:text-white transition-colors">{item.title}</h2>
+        <h2 className="text-lg font-bold mb-2 text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-white transition-colors">{item.title}</h2>
 
-        <p className="text-gray-400 text-xs leading-relaxed mb-4 group-hover:text-gray-300 transition-colors">
+        <p className="text-gray-600 dark:text-gray-400 text-xs leading-relaxed mb-4 group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors">
           {item.description}
         </p>
 
-        <div className="flex items-center gap-1.5 text-blue-400 text-xs font-medium group-hover:gap-3 transition-all duration-300">
+        <div className="flex items-center gap-1.5 text-blue-500 dark:text-blue-400 text-xs font-medium group-hover:gap-3 transition-all duration-300">
           <span>Explore</span>
           <ArrowRight size={14} />
         </div>

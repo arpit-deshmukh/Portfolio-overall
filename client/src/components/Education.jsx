@@ -49,12 +49,12 @@ export function Education() {
                 <div className="card card-hover-soft p-7">
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-4">
                     <div>
-                      <h3 className="text-lg font-bold text-white leading-tight">{edu.degree}</h3>
-                      <p className="text-blue-400 text-sm font-medium mt-1">{edu.institute}</p>
+                      <h3 className="text-blue-400 dark:text-white text-lg font-bold  leading-tight">{edu.degree}</h3>
+                      <p className="text-[#383636] dark:text-blue-400 text-sm font-medium mt-1">{edu.institute}</p>
                     </div>
                     <div className="flex flex-col items-start md:items-end gap-1 flex-shrink-0">
-                      <span className="text-xs font-mono text-gray-500 bg-zinc-800 px-3 py-1 rounded-full">{edu.year}</span>
-                      <span className="text-xs font-semibold text-green-400">{edu.score}</span>
+                      <span className=" text-white bg-blue-400 dark:text-gray-500 dark:bg-zinc-800 text-xs font-mono  px-3 py-1 rounded-full">{edu.year}</span>
+                      <span className="text-[#383636] dark:text-green-400 text-xs font-semibold ">{edu.score}</span>
                     </div>
                   </div>
                   <p className="text-gray-500 text-sm leading-relaxed">{edu.description}</p>

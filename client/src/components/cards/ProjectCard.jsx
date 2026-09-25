@@ -21,7 +21,7 @@ export function ProjectCard({ project, index }) {
 
       <div className="p-5 flex flex-col flex-1">
         <div className="flex justify-between items-start mb-2">
-          <h3 className="text-base font-bold text-white leading-tight">{project.title}</h3>
+          <h3 className="text-[#535252] dark:text-white text-base font-bold  leading-tight">{project.title}</h3>
           <div className="flex gap-2 flex-shrink-0 ml-3">
             {project.github && project.github !== '#' && (
               <a href={project.github} target="_blank" rel="noopener noreferrer"

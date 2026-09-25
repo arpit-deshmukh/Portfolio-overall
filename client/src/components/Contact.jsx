@@ -48,7 +48,7 @@ export function Contact() {
               </div>
               <div>
                 <p className="text-xs text-gray-500 uppercase tracking-widest font-mono mb-1">Email</p>
-                <a href="mailto:arpit.deshmukh@email.com" className="text-white text-sm hover:text-blue-400 transition-colors">
+                <a href="mailto:arpit.deshmukh@email.com" className="text-gray-400 hover:text-gray-500 dark:text-white text-sm dark:hover:text-blue-400 transition-colors">
                   arpit.deshmukh@email.com
                 </a>
               </div>
@@ -60,17 +60,17 @@ export function Contact() {
               </div>
               <div>
                 <p className="text-xs text-gray-500 uppercase tracking-widest font-mono mb-1">Location</p>
-                <p className="text-white text-sm">Pune, Maharashtra, India</p>
+                <p className="text-gray-400  dark:text-white text-sm">Pune, Maharashtra, India</p>
               </div>
             </div>
 
             <div className="card p-6 flex gap-4">
               <a href="https://github.com/arpit-deshmukh" target="_blank" rel="noopener noreferrer"
-                className="flex-1 text-center py-2 border border-zinc-800 rounded-xl text-gray-400 hover:text-white hover:border-blue-500/40 transition-all text-sm font-medium">
+                className="hover:text-blue-400 dark:hover:text-white flex-1 text-center py-2 border dark:border-zinc-800 rounded-xl text-gray-400  hover:border-blue-500/40 transition-all text-sm font-medium">
                 GitHub
               </a>
               <a href="https://www.linkedin.com/in/arpit-deshmukh-08877227a/" target="_blank" rel="noopener noreferrer"
-                className="flex-1 text-center py-2 border border-zinc-800 rounded-xl text-gray-400 hover:text-white hover:border-blue-500/40 transition-all text-sm font-medium">
+                className=" hover:text-blue-400 dark:hover:text-white text-gray-400 flex-1 text-center py-2 border dark:border-zinc-800 rounded-xl  hover:border-blue-500/40 transition-all text-sm font-medium">
                 LinkedIn
               </a>
             </div>
@@ -82,7 +82,7 @@ export function Contact() {
               <input type="text" name="name" value={formData.name} onChange={handleChange} required className="input-base" placeholder="Your full name" />
             </div>
             <div>
-              <label className="text-xs text-gray-500 uppercase tracking-widest font-mono mb-2 block">Email</label>
+              <label className="text-gray-500 text-xs  uppercase tracking-widest font-mono mb-2 block">Email</label>
               <input type="email" name="email" value={formData.email} onChange={handleChange} required className="input-base" placeholder="your@email.com" />
             </div>
             <div>

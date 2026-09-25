@@ -40,7 +40,7 @@ export function Activities() {
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-zinc-900/30 to-transparent" />
               </div>
               <div className="p-7">
-                <h3 className="text-lg font-bold text-white mb-3 leading-tight">{activity.title}</h3>
+                <h3 className="text-blue-400 dark:text-white text-lg font-bold  mb-3 leading-tight">{activity.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{activity.description}</p>
               </div>
             </motion.div>

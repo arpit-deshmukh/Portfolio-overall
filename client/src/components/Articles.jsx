@@ -95,7 +95,7 @@ export function Articles() {
                   <span className="text-xs text-gray-600">·</span>
                   <span className="text-xs font-mono text-gray-500">{article.readTime}</span>
                 </div>
-                <h3 className="text-base font-semibold text-white mb-1.5 group-hover:text-blue-400 transition-colors leading-snug">
+                <h3 className=" text-blue-400 hover:text-blue-500 dark:text-white text-base font-semibold  mb-1.5 group-hover:text-blue-400 transition-colors leading-snug">
                   {article.title}
                 </h3>
                 <p className="text-sm text-gray-500 leading-relaxed line-clamp-2">{article.excerpt}</p>
