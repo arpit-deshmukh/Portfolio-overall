@@ -17,7 +17,7 @@ export function TechDropdown({ open, setOpen, scrollTo }) {
     <div className="relative" ref={ref}>
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 text-sm text-gray-400 hover:text-white transition-colors duration-200 font-medium"
+        className="flex items-center gap-1.5 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200 font-medium"
       >
         Tech
         <ChevronDown
@@ -27,7 +27,7 @@ export function TechDropdown({ open, setOpen, scrollTo }) {
       </button>
 
       {open && (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 rounded-2xl bg-zinc-900/95 backdrop-blur-xl border border-zinc-800 shadow-2xl shadow-black/60 overflow-hidden">
+      <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 rounded-2xl bg-white/95 dark:bg-zinc-900/95 backdrop-blur-xl border border-gray-200 dark:border-zinc-800 shadow-2xl shadow-black/10 dark:shadow-black/60 overflow-hidden">
           <div className="p-1.5">
             {TECH_LINKS.map(({ name, href, icon: Icon, desc }) => (
               <a
@@ -40,8 +40,8 @@ export function TechDropdown({ open, setOpen, scrollTo }) {
                   <Icon size={15} className="text-blue-400" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-white leading-none mb-1">{name}</p>
-                  <p className="text-xs text-gray-500">{desc}</p>
+                <p className="text-sm font-medium text-gray-900 dark:text-white leading-none mb-1">{name}</p>
+<p className="text-xs text-gray-500 dark:text-gray-500">{desc}</p>
                 </div>
               </a>
             ))}

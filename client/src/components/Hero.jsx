@@ -24,8 +24,8 @@ export function Hero() {
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-4">
             Hi, I'm <span className="text-blue-400">{HERO_DATA.firstName}</span>
           </h1>
-          <p className="text-lg text-gray-300 font-medium mb-3">{HERO_DATA.title}</p>
-          <p className="text-gray-500 text-base leading-relaxed mb-10 max-w-md">
+          <p className="text-gray-700 dark:text-gray-300 font-medium mb-3">{HERO_DATA.title}</p>
+          <p className="text-gray-500 dark:text-gray-500 text-base leading-relaxed mb-10 max-w-md">
             {HERO_DATA.description}
           </p>
           <div className="flex flex-wrap gap-4">

@@ -9,7 +9,7 @@ function MobileTechMenu({ scrollTo }) {
     <>
       <button
         onClick={() => setTechOpen(!techOpen)}
-        className="flex items-center justify-between px-4 py-3 text-base text-gray-300 hover:text-white hover:bg-white/5 rounded-xl transition-all font-medium w-full text-left"
+        className="flex items-center justify-between px-4 py-3 text-base text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl transition-all font-medium w-full text-left"
       >
         Tech
         <ChevronDown
@@ -19,13 +19,13 @@ function MobileTechMenu({ scrollTo }) {
       </button>
 
       {techOpen && (
-        <div className="ml-4 flex flex-col gap-1 border-l border-zinc-800 pl-4">
+        <div className="ml-4 flex flex-col gap-1 border-l border-gray-300 dark:border-zinc-800 pl-4">
           {TECH_LINKS.map(({ name, href, icon: Icon }) => (
             <a
               key={name}
               href={href}
               onClick={(e) => scrollTo(e, href)}
-              className="flex items-center gap-3 px-3 py-2.5 text-sm text-gray-400 hover:text-white hover:bg-white/5 rounded-lg transition-all"
+              className="flex items-center gap-3 px-3 py-2.5 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-lg transition-all"
             >
               <Icon size={14} className="text-blue-400" />
               {name}
@@ -45,13 +45,13 @@ export function MobileMenu({ scrollTo, onClose }) {
   ];
 
   return (
-    <div className="md:hidden bg-black/90 backdrop-blur-xl border-t border-white/10 px-4 py-4 flex flex-col gap-1">
+    <div className="md:hidden bg-white/90 dark:bg-black/90 backdrop-blur-xl border-t border-gray-200 dark:border-white/10 px-4 py-4 flex flex-col gap-1">
       {SIMPLE_LINKS.map(({ name, href }) => (
         <a
           key={name}
           href={href}
           onClick={(e) => { scrollTo(e, href); onClose(); }}
-          className="px-4 py-3 text-base text-gray-300 hover:text-white hover:bg-white/5 rounded-xl transition-all font-medium"
+          className="px-4 py-3 text-base text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 rounded-xl transition-all font-medium"
         >
           {name}
         </a>
